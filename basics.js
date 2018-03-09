@@ -1,5 +1,4 @@
 /* Create a `myName` variable and assign it a String value */
-
 var myName = 'Scott'
 
 /* Create a `person` variable and give it 2 properties,
@@ -8,44 +7,38 @@ var myName = 'Scott'
  */
 
 var person = {
-    [name: 'Scott'],
-    [age: 37]
+    name: 'Scott',
+    age: 37
 }
 
 /* Create a variable called `canDrive`,
  * if it should be true if your person object is at least 16 years old
  */
 
-var canDrive = false;
-function license (){
-    if person.age >= 16 {
-        canDrive === true;
-    } else {
-        canDrive === false;
-    }
-}
+var canDrive = person.age >=16;
 
 /* Create a function called `greet`,
  * it should take a 1 parameter, `name`
  * and it should print "Hello, my name is {name}"
  */
-function greet (){
-    document.write('Hello, my name is ' + person.name);
+
+function greet (name) {
+    console.log('Hello, my name is ' + name);
 }
+greet('Scott');
 /* Create an array called `dataTypes` with atleast 1 of every data type;
  * (there are 6 different data types);
  */
-var dataTypes = ['one', 1, true, null, undefined, Symbol()]
+
+var dataTypes = [1, 'two', true, null, undefined, {}];
+
 /* Create a `dog` object
  * it should have a `bark` function that makes your dog bark!
  * It should also have a name attribute with the value of 'Spot'
  */
-
  var dog = {
-     [name: 'Spot'];
-     function bark () {
-         if (dog.name === 'Spot') {
-             alert('bark')
-         }
+     name: 'Spot',
+     bark: function () { 
+         console.log('bark');
      }
- }
+ };
